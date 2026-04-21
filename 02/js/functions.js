@@ -68,12 +68,12 @@ window.onload = function(){
     TweenMax.set('.coupon_area .__cart', { display: 'none', autoAlpha: 0 });
 
     var coupon_area = new TimelineLite()
-    .to('.coupon_area', 0.01, { display: 'block' }, 2)
-    .to('.coupon_area', 0.6, { autoAlpha: 1, height:'auto', opacity: 1, y: 0, ease: Power2.easeOut }, 2)
+    .to('.coupon_area', 0.01, { display: 'block' }, 1.5)
+    .to('.coupon_area', 0.6, { autoAlpha: 1, height:'auto', opacity: 1, y: 0, ease: Power2.easeOut }, 1.5)
 
     var coupon_area_inner = new ScrollMagic.Scene({
         triggerElement: '.coupon_trigger',
-        triggerHook: 0.7,
+        triggerHook: 0.8,
         reverse: false
     })
     .setTween(coupon_area)
